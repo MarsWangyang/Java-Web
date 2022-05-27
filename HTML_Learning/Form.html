@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>表單標籤的學習</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <form action="SubmitTest.html" method="post">
+        暱稱：<input type="text" name="nickName" value="請輸入您的暱稱" /> <br />
+        密碼：<input type="password" name="pwd" /> <br />
+        性別：<input type="radio" name="gender" value="male" /> 男
+        <input type="radio" name="gender" value="female" checked="checked" /> 女<br />
+        愛好：<input type="checkbox" name="hobby" value="basketball" checked="checked" />籃球
+        <input type="checkbox" name="hobby" value="football" checked="checked" />地球
+        <input type="checkbox" name="hobby" value="earth" />足球<br />
+        星座：<select name="star">
+            <option value="1">牡羊座</option>
+            <option value="2" selected>天秤座</option>
+            <option value="3">巨蟹座</option>
+            <option value="4">金牛座</option>
+            <option value="5">雙子座</option>
+        </select> <br />
+        備註：<textarea name="remark" rows="4" cols="50"></textarea> <br />
+        <input type="submit" value="register" />
+        <input type="reset" value="重置（不是清空）">
+        <input type="button" value="這是一個普通按鈕">
+    </form>
+</body>
+
+</html>
+
+<!--
+    <form>： 表單
+    <input type="text">：表示文本框，其中name的屬性必須要指定，否則這個文本框的數據是不會發送給server
+    <input type="password">：表示密碼框，會自動block掉明文
+    <input type="radio">：表示單選按鈕，需要注意的是，name的名稱保持一致，這樣才可以有互斥的結果，同時可以利用checked屬性來設置默認的選項
+    <input type="checkbox">：表示複選框，name屬性建議保持一致，這樣服server獲取value的時候才會是取一個數組
+    <select>：表示下拉列表，每一個選項都是options，其中value是發給server的值，selected表示默認的選項
+    <textarea>：表示多行的文本框，value代表開始以及結束標籤之間的內容
+    <input type="submit">：表示提交按鈕
+    <input type="reset">：表示重置按鈕
+    <input type="button">：表示普通按鈕
+-->

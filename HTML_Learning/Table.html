@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <title>這是Table的tutorial</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <table border="1" width="600" cellspacing="0" cellpadding="4">
+        <tr align="center">
+            <th>↓Column1↓</th>
+            <th>↓Column2↓</th>
+            <th>↓Column3↓</th>
+        </tr>
+        <tr align="center">
+            <td>Mars</td>
+            <td>15</td>
+            <td>male</td>
+        </tr>
+        <tr align="center">
+            <td>Max</td>
+            <td>18</td>
+            <td>male</td>
+        </tr>
+        <tr align="center">
+            <td>Mas</td>
+            <td>16</td>
+            <td>male</td>
+        </tr>
+    </table>
+    <hr />
+    <table border="1" cellspacing="0" cellpadding="4">
+        <tr align="center">
+            <th>名稱</th>
+            <th>數量</th>
+            <th>單價</th>
+            <th>總計</th>
+            <th>動作</th>
+        </tr>
+        <tr align="center">
+            <td>Apple</td>
+            <td rowspan="2">5</td>
+            <td>20</td>
+            <td>100</td>
+            <td><img src="imgs/del.png" width="24" height="24" /></td>
+        </tr>
+        <tr align="center">
+            <td>Orange</td>
+            <td>10</td>
+            <td>50</td>
+            <td><img src="imgs/del.png" width="24" height="24" /></td>
+        </tr>
+        <tr align="center">
+            <td>Banana</td>
+            <td>4</td>
+            <td>30</td>
+            <td>120</td>
+            <td><img src="imgs/del.png" width="24" height="24" /></td>
+        </tr>
+        <tr align="center">
+            <td>Avocado</td>
+            <td>10</td>
+            <td>80</td>
+            <td>800</td>
+            <td><img src="imgs/del.png" width="24" height="24" /></td>
+        </tr>
+        <tr align="center">
+            <td>Total</td>
+            <td colspan="4">xxx</td>
+        </tr>
+    </table>
+</body>
+
+</html>
+
+<!--
+    <table>: 表格
+    <tr>: Row 
+    <td>: Column
+    <th>: Header
+    <hr>: 直線
+
+    table當中有以下的attributes:（但已經被CSS所取代，只是仍須了解）
+    - width: 表格的寬度
+    - border: table frame的thinkness
+    - cellspacing: entry的間隔
+    - cellpadding: entry的填充
+
+    tr當中的attributes: align -> center, left, right
+        
+    rowspan: row合併
+    colspan: column合併
+-->

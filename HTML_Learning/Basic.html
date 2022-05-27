@@ -1,0 +1,146 @@
+<html>
+
+<head>
+
+    <title>網頁的標題(Tab)</title>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    HELLO WORLD! <br />
+    你好, HTML!
+    <p>這裡是第一個段落</p>
+    <p>這裡是第二個段落</p>
+    <img src="imgs/sad.jpg" width="100" height="73" alt="這裡是一個提示，當圖片顯示失敗，會顯示這個文字" />
+    <h1>標題一</h1>
+    <h2>標題一</h2>
+    <h3>標題一</h3>
+    <h4>標題一</h4>
+    <h5>標題一</h5>
+    <h6>標題一</h6>
+
+    有序列表：
+    <ol type="A" start="3">
+        <li>
+            Mars1
+        </li>
+        <li>
+            Mars2
+        </li>
+        <li>
+            Mars3
+        </li>
+        <li>
+            Mars4
+        </li>
+        <li>
+            Mars5
+        </li>
+    </ol>
+
+    無序列表：
+    <ul type="square">
+        <li>
+            Wang1
+        </li>
+        <li>
+            Wang2
+        </li>
+        <li>
+            Wang3
+        </li>
+        <li>
+            Wang4
+        </li>
+        <li>
+            Wang5
+        </li>
+    </ul>
+
+    我是<b>粗體</b> <br />
+    我是<i>斜體</i> <br />
+    我有<u>下底線underline</u><br />
+    我是<b><i>斜粗體</i></b><br />
+    我是<b><u>下底線粗體</u></b><br />
+    我是<b><u><i>下底線粗斜體</i></u></b> <br /><br />
+
+    上下標轉換 <br />
+    水分子化學式: H<sub>2</sub>O <br />
+    氧分子化學式： O<sup>2</sup> <br /><br />
+
+    小於符號： 5&lt;10<br />
+    大於符號： 10&gt;9<br />
+    小於等於： 5&le;10<br />
+    大於等於： 10&ge;9<br />
+
+    註冊商標： &reg;<br />
+    版權符號： &copy;<br /><br />
+
+    <span>Span裡面表示將來要做特殊的處理</span><br /><br />
+
+    <a href="https://google.com" target="_blank">這是超連結(href, hyper reference)</a><br /><br />
+
+    <div>到demo1-1.html當中查看</div>
+
+</body>
+
+</html>
+
+<!--
+    html是一種解釋型的標記語言，不是編譯型，所以不會有編譯錯誤的Error產生而導致整個畫面無法運行，會不斷地解釋，不管有沒有錯誤就繼續下去。
+    browser是fault tolerant的
+
+    html 頁面中會由一對標籤組成：<html> </html>
+    <html>: 開始標籤
+    </html>: 結束標籤
+
+    <HEAD>： 在網頁頁面裡面不會呈現，只會出現在Tab頁面標籤的地方顯示
+    <title>：表示網頁的標題
+    <meta charset="UTF-8">： 請頁面用UTF-8編碼呈現
+    <br/>：表示換行，是一個單標籤。 單標籤定義：開始標籤和結束標籤是同一個，slash放在單詞後面。
+
+    <p>：表示段落標簽
+
+    <img />: 圖片標籤
+        src: 表示圖片文件的路徑
+        width, height: 圖片的大小
+        alt: 表示圖片的提示（當圖片顯示不出來的時候會出現）
+    - 路徑問題：
+        1. 絕對路徑
+        2. 相對路徑
+    <h1~h6>：標題的大小
+
+    列表標籤
+    <ol>：有序列表
+        start: 表示從*開始
+        type：顯示的類型，有A, a, I, i, 1(default)
+        <li>：原稱list item
+    <ul>：無序列表
+        沒有順序 => 當然也沒有start
+        type: disc(default), square, circle
+        <li>：list item
+
+    字體特別樣式：
+        <u>: underline
+        <b>: 粗體bold
+        <i>: 斜體
+        <sup>: 上標
+        <sub>: 下標
+    
+    HTML當中的instance:
+        &lt;: 小於
+        &gt;: 大於
+
+    <span>：不換行的標記區塊
+
+    <a>：表示超連結
+        href: 連結的link, address
+        target:
+            _self 在原視窗打開 (default)
+            _blank 在一個新的視窗中打開
+            _parent 在父視窗當中打開
+            _top 在頂層是窗當中打開
+    
+    <div>：層
+-->
