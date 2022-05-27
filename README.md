@@ -2,15 +2,11 @@
 
 ## **Description**
 
----
-
 ```
 This project is the implementation for Java Web, including CSS, JS, HTML, and Java8
 ```
 
 ## **CSS**
-
----
 
 1. 目的: 頁面顯示的美觀程度 <br/>
 2. 基礎語法:
@@ -31,8 +27,6 @@ This project is the implementation for Java Web, including CSS, JS, HTML, and Ja
    - DIV+CSS layout
 
 ## **JavaScript**
-
----
 
 1. JS 是 client-side (or browser-side)運行的的 script language
 2. JS 是若類型的 language,
@@ -55,8 +49,6 @@ This project is the implementation for Java Web, including CSS, JS, HTML, and Ja
 
 ## **Web**
 
----
-
 |      |                                                                                                           Client-Side (CS, 客戶端服務器架構模式)                                                                                                           |                                                                         Browser-Side (BS, 瀏覽器服務器架構模式)                                                                         |
 | :--: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | Pros | 充分利用客戶端機器的 resource<br/>減輕 server 的 workload<br/> （在否些安全要求不高的計算儲存任務當中，會把這些內容放在 client-side 執行，不需要把所有的 compute 以及 storage 交給 server 執行，從而減輕 server pressure，同時也 reduce network pressure） |                                                                        需要 patch 或是 install, 升級維護的成本高                                                                        |
@@ -64,13 +56,11 @@ This project is the implementation for Java Web, including CSS, JS, HTML, and Ja
 
 ### TomCat
 
----
-
 ```
 Client vs Server 當中, tomcat 所指的意思就是 server, 並且 tomcat 是一個 WebContainer
 ```
 
-Installation (By Docker)
+**Installation (By Docker)**
 
 ```bash
 docker pull tomcat:latest
@@ -84,7 +74,7 @@ rm -r webapps
 mv webapps.dist/ webapps/
 ```
 
-Tomcat Directory hierarchy<br/>
+**Tomcat Directory hierarchy**<br/>
 |---bin--- 可執行的文件<br/>
 |---conf--- 配置文件<br/>
 |---lib--- 依賴許多的 java class<br/>
@@ -95,7 +85,7 @@ Tomcat Directory hierarchy<br/>
 
 - 配置環境變量：因為 tomcat 是用 java 以及 C 來寫的，因此需要 JRE，所以會需要配置 JAVA_HOME
 
-How to deploy a html page in Tomcat
+**How to deploy a html page in Tomcat**
 
 ```bash
 mkdir -p webapps/myweb/WEB-INF # the second folder must be called "WEB-INF"
