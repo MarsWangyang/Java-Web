@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- 內部樣式表 -->
+    <style type="text/css">
+        /* 被style標籤所包圍的range是CSS環境，可以直接寫CSS language */
+
+        /* 標籤樣式表 => 所有的p標籤，都會跟隨著這個color */
+        p {
+            color: red;
+        }
+
+        /* class樣式 */
+        .f30 {
+            font-size: 30px;
+        }
+    </style>
+    <!-- 引用外部的CSS樣式表 -->
+    <link rel="stylesheet" href="demo01_CSS.css">
+</head>
+
+<body>
+    <!-- 
+    <p><font color="red">段落1</font></p>
+    <p><font color="red">段落2</font></p> 
+    -->
+    <p>這裡是段落1</p>
+    <p>這裡是段落2</p>
+    <p class="f30">這裡是段落3</p>
+    <p id="p4">這裡是段落4</p> <!-- id屬性在整個HTML當中，盡量保持唯一性(但重複也不會報錯)-->
+
+    <div>
+        <!-- Emmbed樣式表 -->
+        <p><span style="font-size: 100px; font-weight: bolder; color: burlywood;">Hello</span></p>
+        <span class="f32">World</span>
+        <p class="f32">!!!</p>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+    為什麼需要CSS: 透過一個統一管理的地方，可以更快地做maintenance以及更改
+    CSS的分類：
+    - 基本：
+        1. 標籤樣式表
+        2. class樣式表
+        3. ID樣式表
+    - 進階：
+        1. 組合樣式
+    CSS從位置上的分類：
+        1. Embbed樣式表：
+        2. 內部樣式表：由<sytle>標籤所包裹的，就是內部樣式表
+        3. 外部樣式表：
+ -->

@@ -1,0 +1,45 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+div {
+    position: relative;
+}
+
+#div_container {
+    width: 80%;
+    height: 100%;
+    border: 0px solid blue;
+    margin-left: 10%;
+    float: left;
+    background-color: azure;
+    border-radius: 10cm;
+}
+
+#tbl_fruit {
+    width: 60%;
+    line-height: 28px;
+    margin-top: 120px;
+    margin-left: 20%;
+}
+#tbl_fruit , #tbl_fruit ,#tbl_fruit tr, #tbl_fruit td, #tbl_fruit th{
+    border: 1px solid gray;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: "16";
+    font-family: 'Lucida Sans';
+    font-weight: lighter;
+    color: green;
+}
+
+.w20 {
+    width: 20%;
+}
+
+.delImg {
+    width: 24px;
+    height: 24px;
+}

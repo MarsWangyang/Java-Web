@@ -1,0 +1,17 @@
+/* ID樣式 */
+#p4 {
+    background-color: pink;
+    font-size: 24px;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'Lucida Sans';
+}
+
+/* 組合樣式 */
+div p {
+    color: aqua;
+}
+
+div .f32 {
+    font-size: 32px;
+}
